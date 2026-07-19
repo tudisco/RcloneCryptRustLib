@@ -1,0 +1,34 @@
+[package]
+name = "rclone-crypt-aws"
+version = "0.1.0"
+edition.workspace = true
+license.workspace = true
+# Intentionally higher than the 1.85 workspace baseline: the AWS SDK requires a
+# newer compiler. The core `rclone-crypt` and `rclone-crypt-http` crates keep
+# the lower MSRV.
+rust-version = "1.91.1"
+description = "AWS S3 RangeSource adapter for rclone-crypt"
+
+[dependencies]
+async-trait.workspace = true
+aws-sdk-s3.workspace = true
+bytes.workspace = true
+rclone-crypt = { path = "../rclone-crypt" }
+tempfile.workspace = true
+tokio = { workspace = true, features = ["fs", "io-util", "macros", "sync", "time"] }
+
+[dev-dependencies]
+sha2.workspace = true
+tokio = { workspace = true, features = ["macros", "rt-multi-thread", "fs"] }
+
+[[example]]
+name = "b2_smoke"
+path = "examples/b2_smoke.rs"
+
+[[example]]
+name = "b2_upload_smoke"
+path = "examples/b2_upload_smoke.rs"
+
+[[example]]
+name = "store_doctor"
+path = "examples/store_doctor.rs"

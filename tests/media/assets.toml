@@ -1,0 +1,21 @@
+[[asset]]
+name = "soni-test-image"
+filename = "soni-test-image.png"
+url = "https://upload.wikimedia.org/wikipedia/commons/0/09/Soni_test_image.png"
+source_page = "https://commons.wikimedia.org/wiki/File:Soni_test_image.png"
+license = "CC0-1.0"
+sha256 = "408499e169ef1bde3c55316c1bd3c39b7f4a625b9b7190f9423ced39d69e1c8b"
+bytes = 17811
+mime = "image/png"
+
+[[asset]]
+name = "big-buck-bunny-320x180"
+filename = "big-buck-bunny-320x180.mp4"
+url = "https://download.blender.org/peach/bigbuckbunny_movies/BigBuckBunny_320x180.mp4"
+source_page = "https://peach.blender.org/about/"
+license = "CC-BY-3.0"
+attribution = "(c) copyright 2008, Blender Foundation / www.bigbuckbunny.org"
+sha256 = "f78f39603e6774907f2faafabf26a667f4a6fc31769ec304a8a8f7c62d280508"
+bytes = 64657027
+mime = "video/mp4"
+

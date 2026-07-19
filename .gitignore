@@ -1,0 +1,8 @@
+target/
+Cargo.lock
+
+# Credentials documentation — points at Keychain entries; keep untracked per its own instructions
+TESTING_CREDENTIALS.md
+
+# Fetched test media (see tests/media/fetch.sh)
+tests/media/cache/
