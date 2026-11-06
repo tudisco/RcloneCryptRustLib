@@ -6,3 +6,6 @@ TESTING_CREDENTIALS.md
 
 # Fetched test media (see tests/media/fetch.sh)
 tests/media/cache/
+
+# Syncthing local config
+.stignore
